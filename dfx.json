@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "investormatch_backend": {
+      "main": "src/investormatch_backend/main.mo",
+      "type": "motoko"
+    },
+    "investormatch_frontend": {
+      "dependencies": [
+        "investormatch_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/investormatch_frontend/src/index.html"
+      },
+      "source": [
+        "src/investormatch_frontend/assets",
+        "dist/investormatch_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
