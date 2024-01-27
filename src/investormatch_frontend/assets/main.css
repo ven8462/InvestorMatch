@@ -1,5 +1,5 @@
 body {
-<<<<<<< HEAD
+
     font-family: "Open Sans", sans-serif;
     color: #444444;
   }
@@ -742,7 +742,7 @@ body {
   }
   
   .more-services .card:hover .card-body {
-    background: rgb(255, 81, 0);
+    background: rgb(3, 3, 82);
   }
   
   .more-services .card:hover .read-more a,
@@ -1531,8 +1531,8 @@ body {
   
   #footer .footer-links a:hover {
     color: #3498db;
-  }
-=======
+
+
     font-family: sans-serif;
     font-size: 1.5rem;
 }
@@ -1569,4 +1569,3 @@ button[type="submit"] {
 #greeting:empty {
     display: none;
 }
->>>>>>> 850065332ea0a8006d9033eb55944750fbb864ac
