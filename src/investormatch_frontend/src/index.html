@@ -23,6 +23,71 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
 
   <link href="main.css" rel="stylesheet">
+  <style>
+    .getstarted {
+        /* background-color: rgb(3, 3, 82); */
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        transition: background-color 0.3s ease;
+    }
+
+    .getstarted:hover {
+        background-color: white;
+        border: 2px solid rgb(3, 3, 82);
+    }
+    .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 600px; 
+
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+.card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .card i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+
+        .card-content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* .card-content a:hover {
+            background-color: #ddd;
+        } */
+  </style>
 </head>
 
 <body>
@@ -37,13 +102,58 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+          <li class="dropdown" style="text-align: left;">
+            <a class="nav-link scrollto active" href="#hero">Investing</a>
+            <div class="dropdown-content">
+                <div class="card-container">
+                    <div class="card">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <div class="card-content">
+                            <a href="#section1">Investment opportunities</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="bi bi-people"></i>
+                        <div class="card-content">
+                            <a href="#section2">Businesses</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <i class="bi bi-arrow-up-circle"></i>
+                      <div class="card-content">
+                            <a href="#section3">Investor returns</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="bi bi-lightbulb"></i>
+                        <div class="card-content">
+                            <a href="#section4">Funded Community</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="bi bi-cash"></i>
+                        <div class="card-content">
+                            <a href="#section5">Tax relief</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <i class="bi bi-info-circle"></i>
+                      <div class="card-content">
+                          <a href="#learn-more">Learn more</a>
+                      </div>
+                  </div>
+                    <!-- Add more cards as needed -->
+                </div>
+            </div>
+        </li>
+         
+          <li><a class="nav-link scrollto" href="#services">Raising</a></li>
           
-          
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about" style="background-color: rgb(255, 81, 0);" >Get Started</a></li>
+          <li><a class="getstarted scrollto" href="#about" style="background-color: rgb(3, 3, 82);" >Investment Opportunity</a></li>
+
+          <li><a class="nav-link scrollto" href="#login">Login</a></li>
+          <li><a class="getstarted scrollto" href="#about" style="background-color: rgb(255, 81, 0);" >Join</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
